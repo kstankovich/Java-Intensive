@@ -1,0 +1,18 @@
+package com.kylestankovich.handson9;
+
+public class Animal {
+    // name of the animal
+    private String name;
+
+    public Animal() {
+        name = "";
+    }
+
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+}

@@ -1,0 +1,16 @@
+package com.kylestankovich.taskLiast;
+
+public class MainCleanUp  {
+	public static void displayMenu() {
+		System.out.println("--Task Master--");
+		System.out.println("1. Add to the list");
+		System.out.println("2. Remove from the list");
+		System.out.println("3. Complete that item");
+		System.out.println("4 List the list");
+		System.out.println("0. End of line----");
+		System.out.println("Your choice: ");
+	}
+	
+	
+
+}

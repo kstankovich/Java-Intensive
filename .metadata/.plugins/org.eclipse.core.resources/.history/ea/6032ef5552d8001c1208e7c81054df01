@@ -1,0 +1,71 @@
+package com.kylestankovich.taskLiast;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+public class MainArea  extends MainCleanUp{
+	//static Scanner userInput;
+	//static ArrayList<TaskProperties> tasks;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//task manager
+		tasks = new ArrayList<TaskProperties>();
+		userInput = new Scanner(System.in);
+	
+		boolean running = true;
+		
+		do {
+			displayMenu();
+			int menuChoice = readUserInt();
+			//String userTaskName = readUserString();
+			
+			switch(menuChoice) {
+				case 1:
+					System.out.print("What do you want to add: ");
+					//add task method
+					String taskName = userInput.nextLine();
+					addTask(taskName);
+					break;
+				case 2:
+					while (tasks.size() != 0 ) {
+					System.out.print("Task to be removed: ");
+					listTasks();
+					int removeId = readUserInt();
+					removeTask(removeId);
+					}
+					//remove method
+					break;
+				case 3:
+					while (tasks.size() != 0 ) {
+					System.out.print("Item to complete: ");
+					listTasks();
+					int completeId = readUserInt();
+					completeTask(completeId);
+					}
+					break;
+				case 4:
+					//list method
+					if (tasks.size() != 0) {
+						listTasks();
+						break;
+						
+					}else {
+						System.out.println("Please add a task");
+					break;}
+				case 0:
+					//added after class
+					System.out.println("Thank you for creating a list with us!");
+					running = false;
+					break;
+				default:
+					System.out.println("UNKNOWN");
+			}
+		}
+		while(running);
+	}
+	
+	
+	
+	
+}
+

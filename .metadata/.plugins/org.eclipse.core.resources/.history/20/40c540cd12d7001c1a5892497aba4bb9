@@ -1,0 +1,22 @@
+package com.kylestankovich.handson6;
+
+public class HandsOn {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String songs[] = {"Rock With You", "Smooth Criminal", 
+				"Wanna Be Startin' Something", "Thriller", "Beat It"};
+		StringBuilder sb = new StringBuilder();
+		for(String music: songs) {
+			sb.append(music);
+			sb.append(", \n");
+			
+			
+		}
+		
+		System.out.println(sb);
+		
+
+	}
+
+}

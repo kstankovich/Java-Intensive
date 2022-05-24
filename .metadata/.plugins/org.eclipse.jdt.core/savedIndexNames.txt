@@ -1,0 +1,13 @@
+INDEX VERSION 1.131+/Users/kylestankovich/Desktop/JavaClass/.metadata/.plugins/org.eclipse.jdt.core
+901906358.index
+385843783.index
+3268333248.index
+1554990343.index
+914191596.index
+983576830.index
+3775287992.index
+3927879410.index
+3886116898.index
+3203022340.index
+2021996419.index
+1865797976.index

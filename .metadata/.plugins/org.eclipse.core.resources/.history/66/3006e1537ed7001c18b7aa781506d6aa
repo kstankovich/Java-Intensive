@@ -1,0 +1,24 @@
+package com.kylestankovich.handson9;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class HandsOn {
+
+	public static void main(String[] args) {
+		
+		List<Animal> animalList = new ArrayList<Animal>();
+		AnimalFactory factory = new AnimalFactory();
+		String animalType;
+		
+		do {
+			System.out.println("Enter animal to create or exit: ");
+			animalType = StudentHelper.ReadInputString();
+			
+			
+		}
+		while(!animalType.equalsIgnoreCase("exit"));
+
+	}
+
+}
