@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+
+		<title>Full Story</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	</head>
+
+	<body>
+		<h1>The whole Story!</h1>
+		
+		<p> I was watching TV with <span th:text= "${storyModelInput.personName}"></span>, when suddenly...</p>
+		<p>a breaking news alert showed a <span th:text= "${storyModelInput.animal}"></span> running on the freeway.</p>
+		<p>Even though we saw that <span th:text= "${storyModelInput.years}"></span> years ago, we still laugh to this day.</p>
+		
+		<p>Thank you for reading. <a href="/" >Back home</a></p>
+		
+	</body>
+</html>

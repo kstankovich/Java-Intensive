@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+
+		<title>Home Page</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	</head>
+
+	<body>
+		<h1>We did it!</h1>
+		
+		<p> <a href="/beginning">Click here to start the story. </a></p>
+		<p> <a href="/middle">Click here to go to the middle of the story. </a> </p>
+		<p> <a href="/end">Click here to go to the end of the story. </a> </p>
+		<p> <a href="/fullStory">Click here to view the full the story. </a> </p>
+		
+		
+		
+		
+		
+		<form action="#" th:action="@{/fullStory}" th:object="${fullStory}" method="post">
+		
+			<input th:field="*{personName}" placeholder="Name "/>
+			<input th:field="*{animal}" placeholder="Animal "/>
+			<input th:field="*{years}" placeholder="Years "/>
+			<button>Submit</button>
+		
+		</form>
+		
+	</body>
+</html>
